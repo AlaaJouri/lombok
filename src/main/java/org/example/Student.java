@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
+/*@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Student {
@@ -12,4 +12,16 @@ public class Student {
     private int id;
 
 
+}*/
+public record Student (
+        String name,
+        int id
+){
+
+    public Student(){
+        this(null,0);
+    }
+    public void Test(){
+
+    }
 }
